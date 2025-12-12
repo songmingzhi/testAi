@@ -12,8 +12,10 @@
 
 2. **构建与运行**：
 
+   Maven Central 暂未提供 `spring-ai-alibaba` 相关依赖，项目的 `pom.xml` 已配置 [Aliyun 公共仓库](https://maven.aliyun.com/repository/public) 以保证依赖可以解析。如果本地曾经缓存了解析失败的记录，请使用 `-U` 强制刷新：
+
    ```bash
-   mvn spring-boot:run
+   mvn -U spring-boot:run
    ```
 
 3. **调用接口**：向 `/api/chat` 发送 POST 请求，Body 示例：
