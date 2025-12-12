@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: deepseek-demo
+  ai:
+    alibaba:
+      deepseek:
+        api-key: ${DEEPSEEK_API_KEY:}
+        base-url: https://api.deepseek.com
+        model: deepseek-chat
+        chat-options:
+          temperature: 0.6
+          max-tokens: 2000
+server:
+  port: 8080
